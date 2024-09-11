@@ -1,0 +1,37 @@
+{% extends "adminlayout.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid">
+  <div class="row">
+    <h1>Admin Page</h1>
+    <div class="container">
+      <table class="table ">
+        <thead>
+          <th>Fullname</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Phone</th>
+          <th>Desig</th>
+        </thead>
+        {% for users in users %}
+        <tr>
+          <form action="/modify">
+            <td> <input type="text" name="Username" value="{{users.Username}}"></td>
+            <td> <input type="email" name="Email" value="{{users.Email}}">  </td>
+            <td> <input type="text" name="password" value="{{users.password}}"></td>
+            <td> <input type="text" name="phone" value="{{users.Phone}}"></td>
+            <td> <input type="text" name="desig" value="{{users.desig}}"> </td>
+            <td><button class="btn btn-primary" name="operation" type="submit" value="update" >Update</button></td>
+            <td><button class="btn btn-danger" name="operation" type="submit" value="delete">delete</button></td>
+          </form>
+        </tr>
+      {% endfor %}
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}

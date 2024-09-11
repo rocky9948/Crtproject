@@ -1,0 +1,138 @@
+{% extends "eve1.html "%}
+
+{% block content %}
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup Form</title>
+    
+    <style>
+        
+        .background {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            max-width: 1200px;
+        }
+        
+        .form-container {
+            background: #fff;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            box-sizing: border-box;
+        }
+        
+        h1 {
+            font-weight: bold;
+            margin: 0 0 20px;
+        }
+        
+        input {
+            background: #eee;
+            border: none;
+            padding: 15px;
+            margin: 8px 0;
+            width: 100%;
+        }
+        
+        button {
+            border: none;
+            padding: 15px 20px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .social-container {
+            display: block;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        
+        .social-login {
+            background-color: #3b5998; /* Facebook color */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .social-login.google {
+            background-color: #db4437; /* Google color */
+        }
+        
+        .social-login:hover {
+            opacity: 0.8;
+        }
+        
+        .signup-container a {
+            display: block;
+            margin-top: 15px;
+        }
+        
+        
+        
+            </style>
+
+
+
+    
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="form-container login-container">
+                <form action="/logincheck">
+                    <div>{{msg}}</div>
+                    <h1>Login</h1>
+                    <input name="email" type="email" placeholder="Email" required />
+                    <input name="password" type="password" placeholder="Password" required />
+                    <a href="forget.html" style="padding-left: 140px;">Forgot password?</a>
+                    <button>Login</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+{% endblock %}

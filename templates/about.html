@@ -1,0 +1,210 @@
+{% extends "eve1.html "%}
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+
+        
+
+        .jumbotron h1 {
+            font-family: 'Georgia', serif;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .jumbotron p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .jumbotron .org-info {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-top: 20px;
+            line-height: 1.8;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Georgia', serif;
+        }
+
+        .team-member {
+            margin-bottom: 30px;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member img:hover {
+            transform: scale(1.1);
+        }
+
+        .team-member h5 {
+            margin-top: 15px;
+            font-size: 1.25rem;
+        }
+
+        .team-member p {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .comments-section {
+            margin-top: 40px;
+        }
+
+        .comment-box {
+            margin-top: 10px;
+        }
+
+        .comment-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .comment {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px 0;
+            background-color: #343a40;
+            color: white;
+        }
+
+        .super-organizations {
+            margin-top: 60px;
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .super-organizations h3 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Elegant Jumbotron Section -->
+    <div class="jumbotron text-center bg-primary">
+        <h1 class="display-4">ABOUT US</h1>
+        <p class="lead">Bringing Happiness to Every Celebration Since 2015.</p>
+        <div class="org-info">
+            <p>We proudly partner with prestigious event organizations like:</p>
+            <ul style="list-style-type:none; padding:0;">
+                <li>• Event Master Group</li>
+                <li>• Celebrate Life Association</li>
+                <li>• Grand Moments Coordinators</li>
+                <li>• Delightful Occasions Network</li>
+            </ul>
+            <p>Founded in <strong>2015</strong>, HappyEvents has organized over <strong>500+ successful events</strong> nationwide!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <section>
+            <h1>VISION</h1>
+            <p>To be the leading provider of joyful and memorable experiences, creating lasting memories for every celebration.</p>
+            <h2>MISSION</h2>
+            <p>
+                At HappyEvents, our mission is to bring happiness to every event we plan. We are dedicated to delivering exceptional service, creative solutions, and personalized experiences that exceed our clients' expectations. Whether it's a small gathering or a grand celebration, we strive to make every moment special and stress-free.
+            </p>
+        </section>
+
+        <section class="mt-5">
+            <h2>MEET THE TEAM</h2>
+            <div class="row">
+                <!-- Six team members section -->
+                <div class="col-md-4 team-member text-center">
+                    <img src="{% static 'images/Chaitanaya.jpg' %}" alt="Team Member 1">
+                    <h5>Naga Chaithanya </h5>
+                    <p>Event Co-ordinator</p>
+                </div>
+                <div class="col-md-4 team-member text-center">
+                    <img src="{% static 'images/rakesh.jpg' %}" alt="Team Member 2">
+                    <h5>Rakesh</h5>
+                    <p>Event Co-ordinator</p>
+                </div>
+                <div class="col-md-4 team-member text-center">
+                    <img src="{% static 'images/aditya.jpg' %}" alt="Team Member 3">
+                    <h5>Aadithya</h5>
+                    <p>Event Co-ordinator</p>
+                </div>
+                <div class="col-md-4 team-member text-center">
+                    <img src="{% static 'images/Vincy.jpg' %}" alt="Team Member 4">
+                    <h5>Vincy</h5>
+                    <p>Event Co-ordinator</p>
+                </div>
+                <div class="col-md-4 team-member text-center">
+                    <img src="{% static 'images/Medha.jpg' %}" alt="Team Member 5">
+                    <h5>Medha</h5>
+                    <p>Event Co-ordinator</p>
+                </div>
+                <div class="col-md-4 team-member text-center">
+                    <img src="{% static 'images/Manohar.jpg' %}" alt="Team Member 6">
+                    <h5>Manohar</h5>
+                    <p>Marketing Manager</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Single Comment Section Below All Photos -->
+        <section class="comments-section">
+            <h3>Comments</h3>
+            <div class="comments" id="comments">
+                <!-- Dummy Comments -->
+                <div class="comment">Priya Sharma: Amazing team and service! Highly recommend HappyEvents for any occasion.</div>
+                <div class="comment">Rahul Verma: We had the best experience with HappyEvents, everything was just perfect!</div>
+                <div class="comment">Aditi Patel: The team at HappyEvents made my wedding unforgettable. Thank you!</div>
+                <div class="comment">Suresh Kumar: The event planning and execution were flawless. Will definitely book again!</div>
+            </div>
+            <div class="comment-box">
+                <input type="text" placeholder="Add a comment" id="comment-input">
+                <button class="btn btn-primary mt-2" onclick="addComment()">Post Comment</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 HappyEvents. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function addComment() {
+            var comment = $('#comment-input').val();
+            if (comment) {
+                var commentElement = $('<div class="comment"></div>').text(comment);
+                $('#comments').append(commentElement);
+                $('#comment-input').val(''); // Clear input field
+            }
+        }
+    </script>
+</body>
+</html>
+{% endblock %}

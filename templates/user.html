@@ -1,0 +1,201 @@
+{% extends "eve1.html" %}
+{%load static %}
+
+{% block nav %}
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-white">
+    <div class="lg">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="logo bg-dark">
+              <span></span>Happy<span></span>Even<span></span>ts<span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="/eve1" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/contact" class="nav-link">Contact us</a></li>
+            <li class="nav-item"><a href="/Aboutus" class="nav-link">About us</a></li>
+            <li class="nav-item"><a href="/eve1" class="nav-link">Logout</a></li>
+            
+        </ul>
+    </div>
+</nav>
+{% endblock nav %}
+
+
+{% block content %}
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .event-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .event {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 300px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .event img {
+            width: 100%;
+            height: auto;
+        }
+        .event-details {
+            padding: 15px;
+            text-align: center;
+        }
+        .event-details h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+        .event-details p {
+            color: #777;
+            margin: 10px 0;
+        }
+        .price-tag {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        /* Blinking text CSS */
+.blinking-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6347;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+    </style>
+
+
+    <h1 class="text-center"><span class="badge bg-success">EVENT PACKAGES</span></h1>
+    <div class="event-container">
+        <!-- Birthday Event -->
+        <div class="event">
+            <img src="{% static 'images/birthdayimg.jpg' %}" alt="Birthday Celebration">
+            <div class="event-details">
+                <h3>Birthday Celebration</h3>
+                <p>Make your birthday special with our exclusive celebration packages.</p>
+                <div class="price-tag">&#8377;25000/-</div>
+            </div>
+        </div>
+
+        <!-- Wedding Event -->
+        <div class="event">
+            <img src="{% static 'images/weddingimg.jpg' %}" alt="Wedding Ceremony">
+            <div class="event-details">
+                <h3>Wedding Ceremony</h3>
+                <p>Celebrate your big day with our premium wedding packages.</p>
+                <div class="price-tag">&#8377;30000/-</div>
+            </div>
+        </div>
+
+        <!-- Corporate Event -->
+        <div class="event">
+            <img src="{% static 'images/corporate.jpg' %}" alt="Corporate Event">
+            <div class="event-details">
+                <h3>Corporate Event</h3>
+                <p>Professional event management for conferences, meetings, and product launches.</p>
+                <div class="price-tag">&#8377;40000/-</div>
+            </div>
+        </div>
+
+        <!-- Anniversary Celebration -->
+        <div class="event">
+            <img src="{% static 'images/anniversaryimg.jpg' %}" alt="Anniversary Celebration">
+            <div class="event-details">
+                <h3>Anniversary Celebration</h3>
+                <p>Celebrate your milestones with our elegant anniversary packages.</p>
+                <div class="price-tag">&#8377;40000/-</div>
+            </div>
+        </div>
+
+        <!-- Graduation Party -->
+        <div class="event">
+            <img src="{% static 'images/graduationimg.jpg' %}" alt="Graduation Party">
+            <div class="event-details">
+                <h3>Graduation Party</h3>
+                <p>Honor academic achievements with a memorable graduation celebration.</p>
+                <div class="price-tag">&#8377;20000/-</div>
+            </div>
+        </div>
+
+        <!-- Charity Gala -->
+        <div class="event">
+            <img src="{% static 'images/charitychala.jpg' %}" alt="Charity Gala">
+            <div class="event-details">
+                <h3>Charity Gala</h3>
+                <p>Support a cause with our beautifully organized charity galas.</p>
+                <div class="price-tag">&#8377;30000/-</div>
+            </div>
+        </div>
+
+        <!-- Holiday Party -->
+        <div class="event">
+            <img src="{% static 'images/holidayimg.jpg' %}" alt="Holiday Party">
+            <div class="event-details">
+                <h3>Holiday Party</h3>
+                <p>Celebrate the season with our festive holiday party packages.</p>
+                <div class="price-tag">&#8377;35000/-</div>
+            </div>
+        </div>
+
+        <!-- Baby Shower -->
+        <div class="event">
+            <img src="{% static 'images/babyshower.jpg' %}" alt="Baby Shower">
+            <div class="event-details">
+                <h3>Baby Shower</h3>
+                <p>Welcome the new arrival with our delightful baby shower packages.</p>
+                <div class="price-tag">&#8377;45000/-</div>
+            </div>
+        </div>
+
+        <!-- Engagement Party -->
+        <div class="event">
+            <img src="{% static 'images/engagement.jpg' %}" alt="Engagement Party">
+            <div class="event-details">
+                <h3>Engagement Party</h3>
+                <p>Celebrate your engagement with a beautiful party setup.</p>
+                <div class="price-tag">&#8377;30000/-</div>
+            </div>
+        </div>
+
+        <!-- Festival -->
+        <div class="event">
+            <img src="{% static 'images/festival.jpg' %}" alt="Festival">
+            <div class="event-details">
+                <h3>Festival</h3>
+                <p>Join the festivities with our vibrant festival packages.</p>
+                <div class="price-tag">&#8377;40000/-</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+{% endblock %}

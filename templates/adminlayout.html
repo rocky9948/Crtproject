@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+
+
+.navbar-brand{
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 50px;
+    font-size: 50px;
+    color: #fff !important;
+    text-transform: capitalize;
+
+
+
+}
+.navbar-nav{
+    padding-left: 600px;
+  
+}
+.nav-link{
+    font-weight: bold;
+    font-style: italic;
+    color: #fff !important;
+    margin-left: 5px;
+    transition: 0.6s;
+    border-radius: 20px;
+    text-transform: capitalize;
+
+}
+.nav-link:hover{
+    transform: translateY(-20px)
+    ;
+    background: rebeccapurple;
+}
+
+.lg {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: #f8f9fa; */
+    text-align: center;
+    padding: 20px;
+  }
+  .logo {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .logo span {
+    display: inline-block;
+    transform-origin: bottom;
+    animation: bounce 1s infinite;
+    
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: scaleY(1);
+    }
+    50% {
+      transform: scaleY(1.1);
+    }
+  }
+</style>
+   
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="lg">
+            <div class="row justify-content-center">
+              <div class="col-md-12">
+                <div class="logo bg-dark">
+                  <span>HAPPYEVENTS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="/Viewusers" class="nav-link">Viewusers</a></li>
+                <li class="nav-item"><a href="/logout" class="nav-link">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+   
+
+    {% block content %}
+    <div >
+        <img src="{% static 'images/14.jpg' %}" alt="">
+    </div>
+   {% endblock %}
+
+
+   {% block foot %}
+    <footer class="bg-dark">
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-white">
+                        <h3>Plan</h3>
+                        <p>Efficiently plan and manage your events with our comprehensive tools and features.</p>
+                    </div>
+                    <div class="col-md-4 text-white">
+                        <h3>Organize</h3>
+                        <p>Keep everything organized with our easy-to-use event scheduling and tracking system.</p>
+                    </div>
+                    <div class="col-md-4 text-white">
+                        <h3>Execute</h3>
+                        <p>Execute your events flawlessly with our expert support and real-time updates.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    {% endblock %}
+   
+
+</body>
+</html>
+
+

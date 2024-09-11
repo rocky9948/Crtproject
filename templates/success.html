@@ -1,0 +1,320 @@
+{% extends "eve1.html" %}
+
+{% block content%}
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+     
+        footer{
+            background-color: black;
+            height: 200px;
+        }
+        .logo{
+            height: 50px;
+        }
+        .search{
+            background-color: white;
+            width: 400px;
+        }
+        .location,.sign,.order{
+            display: block;
+            color: white;
+        }
+        .search{
+            background-color: white;
+            width: 600px;
+            margin: 3px;
+        }
+        .loc{
+            margin: 0px;
+            padding: 5px;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+        input{
+            width:600px;
+            height:49px;
+        }
+        .cart{
+            margin-top: 30%;
+            width:40px;
+            height: 40px
+        }
+        .loca{
+            color:white;
+            padding-top: 16px;
+        }
+        .bar{
+            width: 30px;
+            height: 30px;
+            padding-left: 10px;
+            padding-top: 5px;
+        }
+        .all{
+            font-size: 14px; 
+            margin: 0px;
+            padding-top: 10px;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+        .img{
+            margin-left: 4%;
+        }
+        .back{
+            width: 100%;
+            height: 100%;
+        }
+        .box{
+            background-color: white;
+            width: 20%;
+            height: 300px;
+            border-radius: 20px;
+            padding: 10px;
+            margin-left: 14px;
+        }
+        .box1{
+            display: flex;
+        }
+        .category{
+            display:flex;
+            margin-top: -850px;
+            justify-content: space-evenly;
+            background-color: white;
+            margin-bottom: 5%;
+        }
+        .inner{
+            font-size: smaller;
+            padding-left: 0px;
+            margin-top: 0px;
+        }
+        .item img{
+            width:95%;
+        }
+        .cate{
+            padding-top: 10px;
+        }
+        .an{
+            padding-top: 820px;
+            height: 100%;
+        }
+        .left{
+            color: blue;
+            font-size: smaller;
+        }
+        .electric{
+            display:flex;
+            margin-top: -560px;
+            background-color: rgb(215, 219, 223);
+            height: 100%;
+            margin-bottom: 0%;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+        .box2{
+            height: 340px;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .item1{
+            overflow-x: scroll;
+            display: flex;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        .item1 img{
+            width: 20%;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 20px;
+        }
+        footer{
+            background-color: #232f3e;
+            height:600px;
+        }
+        .backtotop{
+            height: 60px;
+            background-color: rgb(80, 96, 147);
+        }
+        .btt{
+            text-align: center;
+            color: white;
+            padding-top: 20px;
+        }
+        .foot{
+            display: flex;
+            padding-top: 60px;
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .foot .box{
+            background-color: #232f3e;
+            height: 240px;
+        }
+        .end{
+            color: white;
+        }
+        hr{
+            margin-bottom: 2%;
+        }
+        .ama{
+            display: flex;
+            padding-left: 300px;
+        }
+        .ama img{
+            height: 200px;
+            margin-top: -80px;
+           
+        }
+        .opt{
+            color: black;
+        }
+        .english{
+            height: 30px;
+            width: 100px;
+            color: white;
+            margin-right: 30px;
+            background-color: transparent;
+        }
+    </style>
+    <link rel="stylesheet" href="{% static 'css\style.css'%}">
+    <link rel="stylesheet" href="{% static 'css\bootstrap.min.css'%}">
+    <script src="{%  static 'js\bootstrap.bundle.min.js'%}"></script>
+</head>
+
+<body>
+ 
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card text-center bg-danger">
+                <div class="card-header text-white"><b>Birthday Decorations</b></div>
+                <div class="card-body"><a href="form1.html"><img  class="img img-thumbnail border-10 bg-danger text-center" src="https://i.pinimg.com/564x/67/8c/0e/678c0ee91fd20af86b27a24d6dbd3962.jpg"></a></div>
+                 <div class="card-footer text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed est ullam obcaecati perferendis fuga harum optio amet mollitia quos in iste fugit  dolor sit amet consectetur adipisicing elit lojh dolor sit amet consectetur adipisicing elit lojh dolorem, nostrum error. Ipsam sunt quaerat dicta consequatur!</div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-center bg-warning">
+                <div class="card-header text-white"><b>Marriage Decorations</b></div>
+                <div class="card-body"><a href="form.html"><img  class="img img-thumbnail border-10 bg-danger" src="https://i.pinimg.com/474x/41/1c/ac/411cac7ab5c89472507045798f0531a1.jpg"></a></div>
+                 <div class="card-footer text-white">Lorem ipsum  dolor sit amet consectetur adipisicing elit lojh  dolor sit amet consectetur adipisicing elit lojh   dolor sit amet consectetur adipisicing elit lojh dolor sit amet consectetur adipisicing elit lojh dolor sit amet consectetur adipisicing elit lojhfh ji jyhirjyi ijy frhjihj jojoj jor oi. Sed est ullam obcaecati perferendis fuga harum optio amet mollitia quos in iste fugit dolorem, nostrum error. Ipsam sunt quaerat dicta consequatur!</div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-center bg-danger">
+                <div class="card-header text-white"><b>House warming cermony Decorations</b></div>
+                <div class="card-body"><a href="form3.html"><img  class="img img-thumbnail border-10 bg-danger" src="https://i.pinimg.com/564x/88/ff/5b/88ff5b3bd6669891198ba969b2a8d964.jpg"></a></div>
+                 <div class="card-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed est ullam obcaecati perferendis fuga harum optio amet mollitia quos in iste fugit dolorem, nostrum error. Ipsam sunt quaerat dicta consequatur!</div>
+            </div>
+        </div>
+    </div><br>
+    
+
+</body>
+</html>
+
+
+
+{% endblock %}
+
+{% block foot %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Footer</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 40px 0;
+        }
+
+        .footer .form-control,
+        .footer .btn-primary {
+            border-radius: 0;
+        }
+
+        .footer .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .footer .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+
+        .footer .container {
+            max-width: 960px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h5>Feedback</h5>
+                    <form id="feedbackForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Your Feedback" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert('Thank you for your feedback!');
+                // Reset form fields
+                document.getElementById('feedbackForm').reset();
+            } else {
+                alert('Please fill out all fields.');
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+{% endblock %}
